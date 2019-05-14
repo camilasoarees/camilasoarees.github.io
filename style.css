@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 
-body, html{
+body, html {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -10,11 +10,24 @@ body, html{
 	background-color: #FFF5EE;
 }
 
+@media screen and (max-width: 768px) {
+  body {
+		align-items: flex-start;
+		margin-top: 5rem;
+	}
+}
+
 .card-wrapper {
 	width: 60%;
 	height: 60%;
 	border-radius: 10px;
 	background-color: #FFFAFA;
+}
+
+@media screen and (max-width: 768px) {
+  .card-wrapper {
+		width: 90%;
+	}
 }
 
 .card-container {
@@ -27,12 +40,37 @@ body, html{
 	background-color: #FFD700;
 }
 
+@media screen and (max-width: 768px) {
+  .card-container {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: auto;
+		padding: 1rem 0;
+	}
+}
+
 .profile-pic {
 	position: absolute;
 	bottom: -4.5rem;
 	left: 3rem;
 	width: 250px;
 	border-radius: 8px;
+}
+
+@media screen and (max-width: 1024px) {
+  .profile-pic {
+		bottom: -6rem;
+		left: 1.5rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+  .profile-pic {
+		position: relative;
+		bottom: auto;
+		left: auto;
+	}
 }
 
 .card-container__informations-principal {
@@ -42,6 +80,14 @@ body, html{
 	flex-direction: column;
 	width: 60%;
 	color: #FFFAFA;
+}
+
+@media screen and (max-width: 768px) {
+  .card-container__informations-principal {
+		width: 100%;
+		margin-top: 1rem;
+		text-align: center;
+	}
 }
 
 .card-container__informations {
@@ -54,11 +100,25 @@ body, html{
 	color: #8B4513;
 }
 
+@media screen and (max-width: 768px) {
+  .card-container__informations {
+		border-radius: 0 0 10px 10px;
+		background-color: #FFFAFA;
+	}
+}
+
 .card-container__informations-item, .card-container__informations-about {
 	margin: .35rem 0;
 	font-family: 'Fjalla One', sans-serif;
 	font-size: 2.4rem;
 	letter-spacing: 1px;
+}
+
+@media screen and (max-width: 768px) {
+  .card-container__informations-item, .card-container__informations-about {
+		margin: 0;
+		font-size: 2rem;
+	}
 }
 
 .card-container__informations-about {
@@ -78,6 +138,20 @@ body, html{
 	justify-content: space-around;
 	align-items: flex-end;
 	width: 60%;
+}
+
+@media screen and (max-width: 1024px) {
+  .container-icon {
+		top: 9rem;
+		right: 1rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+  .container-icon {
+		top: 1rem;
+		right: 1rem;
+	}
 }
 
 .container-icon__item {
